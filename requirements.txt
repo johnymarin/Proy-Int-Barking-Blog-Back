@@ -4,5 +4,6 @@ aiofiles==0.7.0
 python-multipart==0.0.5
 jinja2==3.0.1
 pymssql
+psycopg2
 asyncpg
 sqlalchemy~=1.4.22

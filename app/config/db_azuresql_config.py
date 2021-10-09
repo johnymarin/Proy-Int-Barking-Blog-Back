@@ -15,7 +15,7 @@ port = "5432"
 
 #params = urllib.parse.quote_plus("'DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password")
 #engine = create_engine(f"mssql+pymssql://{username}@{SQLservername}:{password}@{server}")
-engine = create_engine(f"postgresql+asyncpg://{username}:{password}@{server}:{port}/{database}")
+engine = create_engine(f"postgresql+psycopg2://{username}:{password}@{server}:{port}/{database}")
 meta = MetaData()
 #meta.reflect(bind=engine)
 
