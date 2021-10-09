@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from typing import Optional
 
-from requests import Response
+
 from starlette.status import HTTP_204_NO_CONTENT
 
 from app.config.db_azuresql_config import azuresql_conn
