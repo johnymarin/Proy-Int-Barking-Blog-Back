@@ -1,6 +1,6 @@
 from typing import Optional
 
-import os, requests
+import os
 
 from fastapi import FastAPI
 from app.routes.products_routes import product_router
