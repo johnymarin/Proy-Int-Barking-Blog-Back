@@ -11,13 +11,10 @@ from app.routes.domiciliario_routes import hijole_domiciliario_router
 
 #meta.create_all(engine)
 
-os.environ['http_proxy'] = os.environ.get('IPB_HTTP', '')
-os.environ['https_proxy'] = os.environ.get('IPB_HTTPS', '')
+
 
 app = FastAPI()
 
-os.environ['http_proxy'] = os.environ.get('IPB_HTTP', '')
-os.environ['https_proxy'] = os.environ.get('IPB_HTTPS', '')
 
 #app.include_router(product_router, prefix="/restaurante", tags=["Restaurante"])
 app.include_router(hijole_producto_router, prefix="/productos", tags=["Producto"])
