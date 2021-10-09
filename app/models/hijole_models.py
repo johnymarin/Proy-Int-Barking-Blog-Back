@@ -15,7 +15,8 @@ tabla_domiciliaros = Table(
     meta,
     Column("cedula", VARCHAR(20), primary_key=True, autoincrement=False),
     Column("nombre", VARCHAR(32), primary_key=False, autoincrement=False),
-    Column("jornal", DECIMAL, primary_key=False, autoincrement=False)
+    Column("jornal", DECIMAL, primary_key=False, autoincrement=False),
+    Column("placa", VARCHAR(6), primary_key=False, autoincrement=False)
 )
 
 tabla_meseros = Table(
@@ -23,7 +24,8 @@ tabla_meseros = Table(
     meta,
     Column("cedula", VARCHAR(20), primary_key=True, autoincrement=False),
     Column("nombre", VARCHAR(32), primary_key=False, autoincrement=False),
-    Column("jornal", DECIMAL, primary_key=False, autoincrement=False)
+    Column("jornal", DECIMAL, primary_key=False, autoincrement=False),
+    Column("turno", VARCHAR(20), primary_key=False, autoincrement=False)
 )
 
 tabla_cocineros = Table(
@@ -32,7 +34,7 @@ tabla_cocineros = Table(
     Column("cedula", VARCHAR(20), primary_key=True, autoincrement=False),
     Column("nombre", VARCHAR(32), primary_key=False, autoincrement=False),
     Column("jornal", DECIMAL, primary_key=False, autoincrement=False),
-    Column("especialidad", VARCHAR(20), ForeignKey("especialidad.codigo_especialidad"))
+    Column("especialidad", VARCHAR(20))
 )
 
 tabla_especialidad = Table(

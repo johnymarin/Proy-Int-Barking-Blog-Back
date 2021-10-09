@@ -1,10 +1,13 @@
 import urllib
+import os
 
 
 from sqlalchemy import create_engine,MetaData
 
-server = "udeademodbserver.database.windows.net"
+os.environ['http_proxy'] = os.environ.get('IPB_HTTP', '')
+os.environ['https_proxy'] = os.environ.get('IPB_HTTPS', '')
 
+server = "udeademodbserver.database.windows.net"
 database = "udeademodb"
 username = "hkudeabdlab2021"
 password = "PHoXBJpBKqRI5"
