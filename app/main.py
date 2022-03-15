@@ -9,10 +9,11 @@ from app.routes.clietes_routes import hijole_cliente_router
 from app.routes.domiciliario_routes import hijole_domiciliario_router
 #from app.config.db_azuresql_config import meta, engine
 
+# ToDo: remove commented lines
 #meta.create_all(engine)
 
-os.environ['http_proxy'] = os.environ.get('IPB_HTTP', '')
-os.environ['https_proxy'] = os.environ.get('IPB_HTTPS', '')
+#os.environ['http_proxy'] = os.environ.get('IPB_HTTP', '')
+#os.environ['https_proxy'] = os.environ.get('IPB_HTTPS', '')
 
 app = FastAPI()
 
