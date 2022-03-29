@@ -3,7 +3,7 @@ from starlette.status import HTTP_204_NO_CONTENT
 from typing import List
 
 from app.config.db_azuresql_config import azuresql_conn
-from app.models.hijole_models import tabla_domiciliaros
+from app.models.blog_models import tabla_domiciliaros
 from app.schemas.empleado_schemas import Domiciliario
 
 db_conn = azuresql_conn

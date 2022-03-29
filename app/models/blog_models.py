@@ -56,14 +56,12 @@ tabla_plato = Table(
     Column("precio_total", DECIMAL())
 )
 
-tabla_productos = Table(
-    "producto",
+category_table = Table(
+    "category",
     meta,
-    Column("codigo_prd", VARCHAR(20), primary_key=True),
-    Column("descripcion", VARCHAR(20)),
-    Column("costo_producto", DECIMAL()),
-    Column("cantidad_producto", INTEGER()),
-    Column("tipo_producto", VARCHAR(20))
+    Column("category_id", VARCHAR(20), primary_key=True),
+    Column("category_name", VARCHAR(20)),
+    Column("category_description", VARCHAR(20))
 )
 
 tabla_clientes = Table(
